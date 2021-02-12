@@ -16,5 +16,20 @@ namespace AGEVI
         {
             InitializeComponent();
         }
+
+        private void bibliotecToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
