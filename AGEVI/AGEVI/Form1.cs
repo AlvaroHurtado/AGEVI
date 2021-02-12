@@ -10,11 +10,24 @@ using System.Windows.Forms;
 
 namespace AGEVI
 {
-    public partial class Form1 : Form
+    public partial class frmSesion : Form
     {
-        public Form1()
+        public frmSesion()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            var frmPrincipal = new frmPrincipal();
+            frmPrincipal.Show();
+
+            this.Hide();
         }
     }
 }
