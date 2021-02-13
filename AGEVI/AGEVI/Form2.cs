@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace AGEVI
 {
     public partial class frmPrincipal : Form
     {
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
         public frmPrincipal()
         {
             InitializeComponent();
+            player.URL = "mlove.mp3";
         }
 
         private void bibliotecToolStripMenuItem_Click(object sender, EventArgs e)
@@ -28,6 +31,11 @@ namespace AGEVI
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

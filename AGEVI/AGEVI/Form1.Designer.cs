@@ -46,7 +46,7 @@
             this.lblInicioSesion.Size = new System.Drawing.Size(231, 24);
             this.lblInicioSesion.TabIndex = 0;
             this.lblInicioSesion.Text = "Porfavor ingrese sus datos";
-            this.lblInicioSesion.Click += new System.EventHandler(this.label1_Click);
+            this.lblInicioSesion.Click += new System.EventHandler(this.btnOlvide_Click);
             // 
             // lblUsuario
             // 
@@ -104,6 +104,7 @@
             this.btnOlvide.TabIndex = 6;
             this.btnOlvide.Text = "Olvidé mi contraseña";
             this.btnOlvide.UseVisualStyleBackColor = true;
+            this.btnOlvide.Click += new System.EventHandler(this.btnOlvide_Click);
             // 
             // frmSesion
             // 

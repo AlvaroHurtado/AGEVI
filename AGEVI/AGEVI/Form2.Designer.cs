@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bibliotecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calendarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bibliotecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.juegosMóbilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.juegosPCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.juegosConsolasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +50,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // inicioToolStripMenuItem
             // 
@@ -58,17 +60,6 @@
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.inicioToolStripMenuItem.Text = "Inicio";
-            // 
-            // bibliotecToolStripMenuItem
-            // 
-            this.bibliotecToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.juegosMóbilesToolStripMenuItem,
-            this.juegosPCToolStripMenuItem,
-            this.juegosConsolasToolStripMenuItem});
-            this.bibliotecToolStripMenuItem.Name = "bibliotecToolStripMenuItem";
-            this.bibliotecToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.bibliotecToolStripMenuItem.Text = "Biblioteca";
-            this.bibliotecToolStripMenuItem.Click += new System.EventHandler(this.bibliotecToolStripMenuItem_Click);
             // 
             // calendarioToolStripMenuItem
             // 
@@ -83,28 +74,40 @@
             this.exitToolStripMenuItem.Text = "Salir";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // bibliotecToolStripMenuItem
+            // 
+            this.bibliotecToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.juegosMóbilesToolStripMenuItem,
+            this.juegosPCToolStripMenuItem,
+            this.juegosConsolasToolStripMenuItem});
+            this.bibliotecToolStripMenuItem.Name = "bibliotecToolStripMenuItem";
+            this.bibliotecToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.bibliotecToolStripMenuItem.Text = "Biblioteca";
+            this.bibliotecToolStripMenuItem.Click += new System.EventHandler(this.bibliotecToolStripMenuItem_Click);
+            // 
             // juegosMóbilesToolStripMenuItem
             // 
             this.juegosMóbilesToolStripMenuItem.Name = "juegosMóbilesToolStripMenuItem";
-            this.juegosMóbilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.juegosMóbilesToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.juegosMóbilesToolStripMenuItem.Text = "Juegos Móbiles";
             // 
             // juegosPCToolStripMenuItem
             // 
             this.juegosPCToolStripMenuItem.Name = "juegosPCToolStripMenuItem";
-            this.juegosPCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.juegosPCToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.juegosPCToolStripMenuItem.Text = "Juegos PC";
             // 
             // juegosConsolasToolStripMenuItem
             // 
             this.juegosConsolasToolStripMenuItem.Name = "juegosConsolasToolStripMenuItem";
-            this.juegosConsolasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.juegosConsolasToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.juegosConsolasToolStripMenuItem.Text = "Juegos Consolas";
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
