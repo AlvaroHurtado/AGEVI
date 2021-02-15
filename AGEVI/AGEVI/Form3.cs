@@ -21,5 +21,14 @@ namespace AGEVI
         {
 
         }
+
+        private void btnFechas_Click(object sender, EventArgs e)
+        {
+            DateTime inicio = mntCalendar.SelectionStart;
+            DateTime final = mntCalendar.SelectionEnd;
+
+            lblFechaInicial.Text = inicio.ToString();
+            lblFechaFinal.Text = final.ToString();
+        }
     }
 }
