@@ -66,6 +66,7 @@
             this.calendarioToolStripMenuItem.Name = "calendarioToolStripMenuItem";
             this.calendarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.calendarioToolStripMenuItem.Text = "Calendario";
+            this.calendarioToolStripMenuItem.Click += new System.EventHandler(this.frCalendario_load);
             // 
             // exitToolStripMenuItem
             // 
@@ -88,19 +89,19 @@
             // juegosMóbilesToolStripMenuItem
             // 
             this.juegosMóbilesToolStripMenuItem.Name = "juegosMóbilesToolStripMenuItem";
-            this.juegosMóbilesToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.juegosMóbilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.juegosMóbilesToolStripMenuItem.Text = "Juegos Móbiles";
             // 
             // juegosPCToolStripMenuItem
             // 
             this.juegosPCToolStripMenuItem.Name = "juegosPCToolStripMenuItem";
-            this.juegosPCToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.juegosPCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.juegosPCToolStripMenuItem.Text = "Juegos PC";
             // 
             // juegosConsolasToolStripMenuItem
             // 
             this.juegosConsolasToolStripMenuItem.Name = "juegosConsolasToolStripMenuItem";
-            this.juegosConsolasToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.juegosConsolasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.juegosConsolasToolStripMenuItem.Text = "Juegos Consolas";
             // 
             // frmPrincipal

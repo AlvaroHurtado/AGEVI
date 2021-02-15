@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSesion));
             this.lblInicioSesion = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContrasena = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             // 
             this.lblInicioSesion.AutoSize = true;
             this.lblInicioSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicioSesion.Image = ((System.Drawing.Image)(resources.GetObject("lblInicioSesion.Image")));
             this.lblInicioSesion.Location = new System.Drawing.Point(40, 27);
             this.lblInicioSesion.Name = "lblInicioSesion";
             this.lblInicioSesion.Size = new System.Drawing.Size(231, 24);
@@ -52,16 +54,18 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Image = ((System.Drawing.Image)(resources.GetObject("lblUsuario.Image")));
             this.lblUsuario.Location = new System.Drawing.Point(40, 81);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(68, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(133, 20);
             this.lblUsuario.TabIndex = 1;
-            this.lblUsuario.Text = "Usuario:";
+            this.lblUsuario.Text = "Usuario o Correo:";
             // 
             // lblContrasena
             // 
             this.lblContrasena.AutoSize = true;
             this.lblContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContrasena.Image = ((System.Drawing.Image)(resources.GetObject("lblContrasena.Image")));
             this.lblContrasena.Location = new System.Drawing.Point(40, 130);
             this.lblContrasena.Name = "lblContrasena";
             this.lblContrasena.Size = new System.Drawing.Size(96, 20);
@@ -71,23 +75,23 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(217, 83);
+            this.txtUsuario.Location = new System.Drawing.Point(179, 83);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(236, 26);
+            this.txtUsuario.Size = new System.Drawing.Size(274, 26);
             this.txtUsuario.TabIndex = 3;
             // 
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(217, 132);
+            this.txtContraseña.Location = new System.Drawing.Point(179, 132);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(236, 26);
+            this.txtContraseña.Size = new System.Drawing.Size(274, 26);
             this.txtContraseña.TabIndex = 4;
             // 
             // btnAceptar
             // 
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnAceptar.Location = new System.Drawing.Point(713, 415);
+            this.btnAceptar.Location = new System.Drawing.Point(383, 191);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 5;
@@ -98,7 +102,7 @@
             // btnOlvide
             // 
             this.btnOlvide.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnOlvide.Location = new System.Drawing.Point(491, 415);
+            this.btnOlvide.Location = new System.Drawing.Point(12, 191);
             this.btnOlvide.Name = "btnOlvide";
             this.btnOlvide.Size = new System.Drawing.Size(188, 23);
             this.btnOlvide.TabIndex = 6;
@@ -110,7 +114,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(470, 226);
             this.Controls.Add(this.btnOlvide);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtContraseña);

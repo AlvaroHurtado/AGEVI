@@ -27,7 +27,7 @@ namespace AGEVI
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
@@ -38,6 +38,12 @@ namespace AGEVI
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void frCalendario_load(object sender, EventArgs e)
+        {
+            var frmCalendario = new frmCalendario();
+            frmCalendario.Show();
         }
     }
 }
