@@ -40,10 +40,21 @@ namespace AGEVI
 
         }
 
-        private void frCalendario_load(object sender, EventArgs e)
+        private void frmCalendario_load(object sender, EventArgs e)
         {
             var frmCalendario = new frmCalendario();
             frmCalendario.Show();
+        }
+
+        private void juegosMóbilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmJuegosMobiles_load(object sender, EventArgs e)
+        {
+            var frmJuegosMobiles = new frmJuegosMobiles();
+            frmJuegosMobiles.Show();
         }
     }
 }

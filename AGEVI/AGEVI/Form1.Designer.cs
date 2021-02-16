@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSesion));
             this.lblInicioSesion = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -36,6 +37,9 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnOlvide = new System.Windows.Forms.Button();
+            this.rdbRobot = new System.Windows.Forms.RadioButton();
+            this.pbrLoad = new System.Windows.Forms.ProgressBar();
+            this.tmrLoad = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lblInicioSesion
@@ -110,12 +114,38 @@
             this.btnOlvide.UseVisualStyleBackColor = true;
             this.btnOlvide.Click += new System.EventHandler(this.btnOlvide_Click);
             // 
+            // rdbRobot
+            // 
+            this.rdbRobot.AutoSize = true;
+            this.rdbRobot.Location = new System.Drawing.Point(206, 194);
+            this.rdbRobot.Name = "rdbRobot";
+            this.rdbRobot.Size = new System.Drawing.Size(105, 17);
+            this.rdbRobot.TabIndex = 7;
+            this.rdbRobot.TabStop = true;
+            this.rdbRobot.Text = "No soy un Robot";
+            this.rdbRobot.UseVisualStyleBackColor = true;
+            this.rdbRobot.CheckedChanged += new System.EventHandler(this.rdbRobot_CheckedChanged);
+            // 
+            // pbrLoad
+            // 
+            this.pbrLoad.Location = new System.Drawing.Point(12, 232);
+            this.pbrLoad.Name = "pbrLoad";
+            this.pbrLoad.Size = new System.Drawing.Size(446, 23);
+            this.pbrLoad.TabIndex = 8;
+            // 
+            // tmrLoad
+            // 
+            this.tmrLoad.Enabled = true;
+            this.tmrLoad.Tick += new System.EventHandler(this.tmrLoad_Tick);
+            // 
             // frmSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(470, 226);
+            this.ClientSize = new System.Drawing.Size(470, 267);
+            this.Controls.Add(this.pbrLoad);
+            this.Controls.Add(this.rdbRobot);
             this.Controls.Add(this.btnOlvide);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtContraseña);
@@ -139,6 +169,9 @@
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnOlvide;
+        private System.Windows.Forms.RadioButton rdbRobot;
+        private System.Windows.Forms.ProgressBar pbrLoad;
+        private System.Windows.Forms.Timer tmrLoad;
     }
 }
 
