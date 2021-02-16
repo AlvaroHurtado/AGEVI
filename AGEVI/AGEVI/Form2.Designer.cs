@@ -98,12 +98,14 @@
             this.juegosPCToolStripMenuItem.Name = "juegosPCToolStripMenuItem";
             this.juegosPCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.juegosPCToolStripMenuItem.Text = "Juegos PC";
+            this.juegosPCToolStripMenuItem.Click += new System.EventHandler(this.juegosPCToolStripMenuItem_Click);
             // 
             // juegosConsolasToolStripMenuItem
             // 
             this.juegosConsolasToolStripMenuItem.Name = "juegosConsolasToolStripMenuItem";
             this.juegosConsolasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.juegosConsolasToolStripMenuItem.Text = "Juegos Consolas";
+            this.juegosConsolasToolStripMenuItem.Click += new System.EventHandler(this.juegosConsolasToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 

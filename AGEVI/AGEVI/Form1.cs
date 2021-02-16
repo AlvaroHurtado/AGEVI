@@ -68,12 +68,7 @@ namespace AGEVI
                     pbrLoad.Value++;
                 if (pbrLoad.Value == 100)
                 {
-                    tmrLoad.Enabled = false;
-
-                    var frmPrincipal = new frmPrincipal();
-                    frmPrincipal.Show();
-
-                    this.Hide();
+                    
                 }
 
             }

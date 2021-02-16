@@ -56,5 +56,17 @@ namespace AGEVI
             var frmJuegosMobiles = new frmJuegosMobiles();
             frmJuegosMobiles.Show();
         }
+
+        private void juegosPCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmJuegosPC = new frmJuegosPC();
+            frmJuegosPC.Show();
+        }
+
+        private void juegosConsolasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmJuegosConsolas = new frmJuegosConsolas();
+            frmJuegosConsolas.Show();
+        }
     }
 }
